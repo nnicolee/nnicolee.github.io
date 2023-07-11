@@ -1,66 +1,90 @@
 <!DOCTYPE html>
 <html>
-  <head>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width">
-      <title>Nicole's Portfolio</title>
-      <link href="style.css" rel="stylesheet" type="text/css" />
-      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
-      <link rel="icon" 
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  </head>
-    <body>
-        <div class="container">
-	  
 
-		<!--────────────────Header───────────────-->
-	<header>
-		<nav>	
-		 <ul class="nav-bar"><div class="bg"></div>
-			<li><a class="nav-link active" href="index.html">Home</a></li>
-			<li><a class="nav-link" href="projects.html">Projects</a></li>
-			<li><a class="nav-link" href="resume.html">Resume</a></li>
-		 </ul>
-			
-			<div class="hamburger">
-				<div class="line1"></div>
-            <div class="line2"></div>
-				<div class="line3"></div>
-			</div>
-		</nav>
-	</header>
-	<main>
-		<!--─────────────────Home────────────────-->
-	  <div id="home">
-      <section class="intro">
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <div style = "position:relative; right: 300px">
-        <h3>Nicole Lee<hr></h3>
-        <p>Hello! My name is Nicole Lee and I'm from Los Angeles, California.
-        <p>
-        I am a 16 years old who enjoys making random programs in Python.</p>
-        <p> I love learning new things!</p>
-        <br>
-        <p> Feel Free to Contact Me! </p>
-        <!--────social media links─────-->
-        <div class="social-media">
-          <a href="mailto:nicolelee7887@gmail.com" target="_blank"><i class='fas fa-envelope'></i></a>
-          <a href="sms:6266739797" target="_blank"><i class='fas fa-mobile'></i></a>
-          <a href="https://github.com/nnicolee" target="_blank"><i class='fab fa-github'></i></a>
-          <a href="https://www.linkedin.com/in/nicolelee7887" target="_blank"><i class='fab fa-linkedin-in'></i></a>
-        </div>
-        <br>
-        </div>
-      <div title="Illustration by Storyset (storyset.com)"><img src="Tree.png" alt="Girl sitting next to a tree." style="position:absolute; top:80px; left:1000;width:600px;height:480.8px;"></div>
-	  </div>  
-	</main>
-	  <footer class="copyright">© 2021 Nicole Lee
-     </footer> 
+<head>
+
+  <title>Nicole Lee</title>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- link the webpage's stylesheet -->
+  <link rel="stylesheet" href="/style.css" />
+  <link href="https://fonts.cdnfonts.com/css/maharlika" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+  <script src="https://kit.fontawesome.com/ad14e46fe9.js" crossorigin="anonymous"></script>
+
+  <!-- link the webpage's JavaScript file -->
+  <script src="/script.js" defer></script>
+
+</head>
+
+<body>
+  <nav>
+    <ul>
+      <li>
+        <a href="#projects">Projects</a>
+      </li>
+      <li>
+        <a href="index.html">Home</a>
+      </li>
+    </ul>
+  </nav>
+  <header>
+    <div>
+      <h1><span class="highlight">Nicole Lee</span></h1>
+      <p>I'm Nicole Lee who's an incoming freshman at UC Berkeley studying Electrical Engineering and Computer Sciences
+        (EECS). I'm extremely proud to be a recipient of UC Berkeley's
+        Regents’ and Chancellor’s Scholarship which is awarded to the top 1% of UC Berkeley Applicants.</p>
+      <hr class="pinkline">
+      <div class="social-media">
+        <a href="mailto:nicolelee1@berkeley.edu" target="_blank"><i class='fas fa-envelope'></i></a>
+        <a href="https://github.com/nnicolee" target="_blank"><i class='fab fa-github'></i></a>
+        <a href="https://www.linkedin.com/in/nicolelee7887/" target="_blank"><i class='fab fa-linkedin-in'></i></a>
+      </div>
+    </div>
+    <div>
+      <img src="assets/profilepic.png" alt="An image of a pink defalut profile picture">
+    </div>
+  </header>
+  <div class="container">
+    <a href="#projects">
+      <div class="arrow"></div>
+    </a>
   </div>
-  </body>
+  <main id="projects">
+    <h1>My Projects</h1>
+    <div class="projects">
+      <h2>July 2022 - December 2022</h2>
+      <br>
+      <p>During MITES Semsester (formerly MOSTEC), I took a biomedical signal and processing course (along with science writing course) where my team did research on COVID-19 effects on symptoms leading to heart diseases such as myocarditis.</p>
+
+      <embed src="assets/team_6_hernandez_lee_louissaint_FINAL_REPORT.pdf" type="application/pdf" width="100%"
+        height="100%" style="width:600px;height:500px;display:block;margin-left: auto; margin-right: auto;">
+    </div>
+    <div class="projects">
+      <h2>September 2021 - June 2023</h2>
+      <p>As part of the website development team for Code 4 Tomorrow, I work on front-end development consisting of
+        UI/UX design and coding.</p>
+      <br>
+      <a href="https://www.code4tomorrow.org/" target="_blank">
+        Code 4 Tomorrow Website
+        <i class="fa-solid fa-arrow-up-right-from-square" style="color:white"></i>
+      </a>
+    </div>
+    <div class="projects">
+      <h2>July 2021 </h2>
+      <p>During the AI4ALL program at Carnegie Mellon University 2021, I (along with my group members and a mentor)
+        worked on plant disease classification.</p>
+      <br>
+      <embed src="assets/AI4ALL Project Slides.pdf" type="application/pdf" width="100%" height="100%"
+        style="width:600px;height:380px;display:block;margin-left: auto; margin-right: auto;">
+    </div>
+    <br>
+    <br>
+    <p style="text-align:center">More projects to be added...</p>
+  </main>
+
+</body>
+
 </html>
