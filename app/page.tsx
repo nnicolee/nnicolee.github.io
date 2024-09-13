@@ -1,101 +1,74 @@
-import Image from "next/image";
+"use client";  // Marking as client component
+import React from 'react';
+
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";  // Import specific icons
+import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <div className="min-h-screen bg-black text-white">
+      {/* Navbar aligned to the right with no separator */}
+      <nav className="fixed top-0 right-0 w-full p-6 flex justify-end space-x-6 text-white bg-black z-50">
+  <a href="#experience" className="hover:underline cursor-pointer">Experience</a>
+  <a href="#projects" className="hover:underline cursor-pointer">Projects</a>
+  {/* Use target="_blank" to open in a new tab */}
+  <a href="/nicole_lee_resume.pdf" target="_blank" className="hover:underline cursor-pointer">Resume</a>
+</nav>
+      {/* Main Content */}
+      <main className="pt-32 px-6 flex flex-col items-start max-w-3xl mx-auto space-y-8">
+        
+        {/* Increased font size for the name */}
+        <h1 className="text-6xl font-bold">Hi, I&apos;m Nicole Lee 👋</h1>
+        <p className="text-lg leading-relaxed">
+        I&apos;m currently a second-year studying Electrical Engineering and Computer Sciences (EECS) at University of California, Berkeley.
+        </p>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
+        {/* Font Awesome Social Media Icons */}
+        <div className="flex space-x-4">
+          <a href="https://github.com/nnicolee" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-400">
+            <FontAwesomeIcon icon={faGithub} size="2x" />
           </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
+          <a href="https://linkedin.com/in/nicolelee7887" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-400">
+            <FontAwesomeIcon icon={faLinkedinIn} size="2x" />
+          </a>
+          <a href="mailto:nicolelee1@berkeley.edu" className="text-white hover:text-gray-400">
+            <FontAwesomeIcon icon={faEnvelope} size="2x" />
           </a>
         </div>
+
+        {/* Experience Section */}
+        <section id="experience" className="space-y-4 pt-16">
+          <h2 className="text-3xl font-semibold">Experience</h2>
+          <p>
+          </p>
+          <ul className="list-disc pl-6 space-y-2">
+            <li><strong>SDE Intern @ Amazon:</strong> Developed a self-service tool for autoblocking configuration changes, saved six weeks of work per year.</li>
+            <li><strong>Machine Learning Researcher @ Climinformatics:</strong> Engineered a Seq2Seq model which achieved a 95% accuracy rate in 6-hourly Heat Stress Index forecasts, significantly improving the predictiveness of climate impacts on energy demand and wildfire risks.</li>
+            <li><strong>Full-stack @ Web Development at Berkeley: </strong> coming soon </li>
+          </ul>
+        </section>
+
+        {/* Projects Section */}
+        <section id="projects" className="space-y-4 pt-16">
+          <h2 className="text-3xl font-semibold">Projects</h2>
+          <p>
+            tba
+          </p>
+          {/* <ul className="list-disc pl-6 space-y-2">
+            <li><strong>Project A:</strong> A web app for managing tasks efficiently using React and Node.js.</li>
+            <li><strong>Project B:</strong> An AI-powered tool for predicting stock prices using deep learning models.</li>
+            <li><strong>Project C:</strong> A machine learning model that classifies different flower species with 96% accuracy.</li>
+          </ul> */}
+        </section>
       </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
+
+      {/* Footer */}
+      <footer className="w-full py-6 bg-black text-center text-white mt-8">
+        &copy; 2024 Nicole Lee
       </footer>
+
     </div>
   );
 }
