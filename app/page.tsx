@@ -53,14 +53,12 @@ export default function Home() {
         {/* Projects Section */}
         <section id="projects" className="space-y-4 pt-16">
           <h2 className="text-3xl font-semibold">Projects</h2>
-          <p>
-            tba
-          </p>
-          {/* <ul className="list-disc pl-6 space-y-2">
-            <li><strong>Project A:</strong> A web app for managing tasks efficiently using React and Node.js.</li>
-            <li><strong>Project B:</strong> An AI-powered tool for predicting stock prices using deep learning models.</li>
-            <li><strong>Project C:</strong> A machine learning model that classifies different flower species with 96% accuracy.</li>
-          </ul> */}
+          <ul className="list-disc pl-6 space-y-2">
+            <li><strong>Plant Diseases Image Classification:</strong> Developed a deep convolutional neural network that optimizes plant disease detection with 97% accuracy.</li>
+            <li><strong>AWS DeepRacer:</strong> Coded a reward function and tuned hyperparameters for an autonomous racing car which made it in top 2% of the AWS DeepRacer competition.</li>
+            <li><strong>Stock Prediction:</strong> tba </li>
+            <li>tba</li>
+          </ul>
         </section>
       </main>
 
