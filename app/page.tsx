@@ -22,7 +22,7 @@ export default function Home() {
         {/* Increased font size for the name */}
         <h1 className="text-6xl font-bold">Hi, I&apos;m Nicole Lee 👋</h1>
         <p className="text-lg leading-relaxed">
-        I&apos;m currently a second-year studying Electrical Engineering and Computer Sciences (EECS) at University of California, Berkeley.
+        I&apos;m currently a second-year studying Electrical Engineering and Computer Sciences (EECS) at University of California, Berkeley. My hobbies includes brain-inducing games such as poker, chess, crosswords, etc. I also love building legos and cafe-hopping.
         </p>
 
         {/* Font Awesome Social Media Icons */}
