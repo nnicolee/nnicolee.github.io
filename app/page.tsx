@@ -3,7 +3,6 @@ import React, { useState, useEffect } from 'react';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
-import { Carousel } from 'react-responsive-carousel';
 
 export default function Home() {
   const catImages = Array.from({ length: 12 }, (_, i) => `/cat_${i + 1}.png`);
@@ -85,7 +84,7 @@ export default function Home() {
         <section id="experience" className="space-y-6 pt-16">
           <h2 className="text-3xl font-semibold">Experience ⋆ ˚｡⋆౨ৎ˚</h2>
           <ul className="list-disc pl-6 space-y-4">
-            <li><span className="animated-underline font-bold">SDE Intern @ Amazon:</span> Developed a self-service tool for autoblocking configuration changes, saved six weeks of work for engineers annually and impacted hundreds of millions customers' deliveries!</li>
+            <li><span className="animated-underline font-bold">SDE Intern @ Amazon:</span> Developed a self-service tool for autoblocking configuration changes, saved six weeks of work for engineers annually and impacted hundreds of millions customers&apos; deliveries!</li>
             <li><span className="animated-underline font-bold">Machine Learning Researcher @ Climinformatics:</span> Engineered a Seq2Seq model which achieved a 95% accuracy rate in 6-hourly Heat Stress Index forecasts, significantly improving the predictiveness of climate impacts on energy demand and wildfire risks.</li>
             <li><span className="animated-underline font-bold">Full-stack @ Web Development at Berkeley:</span> Collaborated with cross-functional teams to develop interactive and visually appealing web applications for companies using HTML, CSS, JavaScript, and modern frontend frameworks such as React. Delivered the client a seamless user experience and improved website functionality.</li>
             <li><span className="animated-underline font-bold">Frontend Developer @ BerkeleyTime:</span> Developed the interface for crowd-sourced rating feature streamlining the course selection and enrollment process for 45,000+ students.</li>
